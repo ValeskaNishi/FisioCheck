@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # FisioCheck
 
 Aplicação web para avaliação fisioterapêutica, desenvolvida com React e TypeScript.
@@ -256,3 +257,7 @@ Acesse em http://localhost:3000
 | `npm start`     | Servidor de desenvolvimento |
 | `npm run build` | Build de produção           |
 | `npm test`      | Executa os testes           |
+=======
+# FisicoCheck
+O FisioCheck é uma aplicação web para gerenciamento de avaliações fisioterapêuticas, permitindo realizar operações de CRUD (criar, visualizar, editar e deletar) nas avaliações de pacientes, com controle de status e escala de dor.
+>>>>>>> bfe60edcc65001b827275a141d6003a765e13548
