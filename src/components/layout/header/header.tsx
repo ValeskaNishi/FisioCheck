@@ -16,7 +16,7 @@ export default function Header() {
         onClick={() => navigate("/")}
       >
         <img
-          src="/assets/images/fisioLogo.jpg"
+          src="/assets/images/fisiochecklogo.jpg"
           alt="FisioCheck Logo"
           className="headerLogoImage"
         />
