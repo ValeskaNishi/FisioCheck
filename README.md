@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # FisioCheck
 
 Aplicação web para avaliação fisioterapêutica, desenvolvida com React e TypeScript.
@@ -229,17 +228,6 @@ git clone https://github.com/seu-usuario/fisiocheck.git
 cd fisiocheck
 npm install -f
 
-
-Crie o arquivo `.env` na raiz do projeto:
-
-```env
-REACT_APP_API_URL=https://<SEU_ID>.mockapi.io/api
-````
-
-> No Create React App, variáveis de ambiente devem começar com `REACT_APP_`.
-
----
-
 ## Execução
 
 ```bash
@@ -257,7 +245,6 @@ Acesse em http://localhost:3000
 | `npm start`     | Servidor de desenvolvimento |
 | `npm run build` | Build de produção           |
 | `npm test`      | Executa os testes           |
+
 =======
-# FisicoCheck
-O FisioCheck é uma aplicação web para gerenciamento de avaliações fisioterapêuticas, permitindo realizar operações de CRUD (criar, visualizar, editar e deletar) nas avaliações de pacientes, com controle de status e escala de dor.
->>>>>>> bfe60edcc65001b827275a141d6003a765e13548
+
