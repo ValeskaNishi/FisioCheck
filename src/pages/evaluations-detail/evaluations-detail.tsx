@@ -81,7 +81,7 @@ export default function EvaluationDetail() {
         Voltar
       </Button>
 
-      <Card bordered>
+      <Card>
         <Flex vertical gap={16} style={{ marginBottom: 20 }}>
           <div>
             <Title level={3} style={{ margin: 0 }}>
@@ -96,7 +96,7 @@ export default function EvaluationDetail() {
             <Tooltip title="Editar avaliação">
               <Button
                 icon={<EditOutlined />}
-                onClick={() => navigate(`/evaluation/${id}/edit`)}
+                onClick={() => navigate(`/evaluation-form-edit/${id}`)}
               >
                 Editar
               </Button>

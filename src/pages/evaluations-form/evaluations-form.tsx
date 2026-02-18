@@ -109,7 +109,7 @@ export default function EvaluationForm() {
         Voltar
       </Button>
 
-      <Card bordered>
+      <Card>
         <Flex vertical gap={4} style={{ marginBottom: 20 }}>
           <Title level={3} style={{ margin: 0 }}>
             {isEditing ? "Editar avaliação" : "Nova avaliação"}

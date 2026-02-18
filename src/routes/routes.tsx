@@ -12,8 +12,11 @@ export default function AppRoutes() {
         <Header />
         <Routes>
           <Route path="/" element={<EvaluationsListHome />} />
-          <Route path="/evaluation/:id" element={<EvaluationDetail />} />
-          <Route path="/evaluation/:id/edit" element={<EvaluationForm />} />
+          <Route path="/evaluation-detail/:id" element={<EvaluationDetail />} />
+          <Route
+            path="/evaluation-form-edit/:id"
+            element={<EvaluationForm />}
+          />
           <Route path="/new-evaluation" element={<EvaluationForm />} />
         </Routes>
       </Layout>

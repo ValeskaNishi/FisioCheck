@@ -32,7 +32,11 @@ export default function EvaluationsListHome() {
     useEvaluations();
   const [searchTerm, setSearchTerm] = useState("");
 
-  const filteredEvaluations = useMemo(() => {
+  const handleDeleteEvaluation = (id: string) => {
+    showDeleteConfirm(() => removeEvaluation(id));
+  };
+
+  const searchEvaluations = useMemo(() => {
     const term = searchTerm.trim().toLowerCase();
     if (!term) return evaluations;
 
@@ -44,11 +48,7 @@ export default function EvaluationsListHome() {
   }, [evaluations, searchTerm]);
 
   const totalCount = evaluations.length;
-  const filteredCount = filteredEvaluations.length;
-
-  const handleDeleteEvaluation = (id: string) => {
-    showDeleteConfirm(() => removeEvaluation(id));
-  };
+  const filteredCount = searchEvaluations.length;
 
   const columns: ColumnsType<Evaluation> = [
     {
@@ -102,14 +102,14 @@ export default function EvaluationsListHome() {
             <Button
               type="text"
               icon={<EyeOutlined />}
-              onClick={() => navigate(`/evaluation/${record.id}`)}
+              onClick={() => navigate(`/evaluation-detail/${record.id}`)}
             />
           </Tooltip>
           <Tooltip title="Editar">
             <Button
               type="text"
               icon={<EditOutlined />}
-              onClick={() => navigate(`/evaluation/${record.id}/edit`)}
+              onClick={() => navigate(`/evaluation-form-edit/${record.id}`)}
             />
           </Tooltip>
           <Tooltip title="Excluir">
@@ -171,7 +171,7 @@ export default function EvaluationsListHome() {
 
       <Table
         columns={columns}
-        dataSource={filteredEvaluations}
+        dataSource={searchEvaluations}
         rowKey="id"
         pagination={{ pageSize: 8, showSizeChanger: false }}
         locale={{
