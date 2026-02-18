@@ -26,7 +26,7 @@ Aplicação web para avaliação fisioterapêutica, desenvolvida com React e Typ
 ## Instalação
 
 ````bash
-git clone https://github.com/seu-usuario/fisiocheck.git
+git clone https://github.com/ValeskaNishi/FisicoCheck.git
 cd fisiocheck
 npm install -f
 
