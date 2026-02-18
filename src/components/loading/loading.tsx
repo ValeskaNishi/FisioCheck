@@ -11,7 +11,7 @@ export default function Loading() {
         width: "100%",
       }}
     >
-      <Spin size="large" tip="Carregando..." />
+      <Spin size="large" description="Carregando..." />
     </div>
   );
 }

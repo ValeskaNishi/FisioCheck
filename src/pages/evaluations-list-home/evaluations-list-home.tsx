@@ -139,7 +139,7 @@ export default function EvaluationsListHome() {
     <div
       style={{ padding: 24, maxWidth: 1400, margin: "0 auto", width: "100%" }}
     >
-      <Space direction="vertical" size={4} style={{ marginBottom: 16 }}>
+      <Space orientation="vertical" size={4} style={{ marginBottom: 16 }}>
         <Title level={3} style={{ margin: 0 }}>
           Lista de avaliações físicas do paciente
         </Title>
